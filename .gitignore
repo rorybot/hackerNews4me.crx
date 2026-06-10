@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.tsbuildinfo
+# dist/ is committed so users can load unpacked without building

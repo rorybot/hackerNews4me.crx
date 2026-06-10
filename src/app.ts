@@ -1,3 +1,5 @@
+// Ported app logic; UI modules remain gradual-typed.
+// @ts-nocheck
 import {
   routeFromLocation,
   fetchStoryIds,
@@ -5,30 +7,28 @@ import {
   fetchItem,
   fetchCommentTree,
   fetchStoriesSortedByPoints,
-} from "./api.js";
-import { loadSettings, saveSettings, hideItem } from "./storage.js";
-import { bindKeyboard } from "./keyboard.js";
+} from "./api";
+import { loadSettings, saveSettings, hideItem } from "./storage";
+import { bindKeyboard } from "./keyboard";
 import {
   upvote,
   hideOnHn,
   checkLogin,
   openBackgroundTab,
-} from "./actions.js";
-import { renderShell } from "./ui/shell.js";
-import { renderList, setSelectedRow } from "./ui/list.js";
+} from "./actions";
+import { renderShell } from "./ui/shell";
+import { renderList, setSelectedRow } from "./ui/list";
 import {
   renderThread,
   toggleCollapsed,
   getFlatEntry,
-} from "./ui/thread.js";
+} from "./ui/thread";
 
 const PAGE_SIZE = 30;
 /** How long hide stays undoable (ms). Match CSS animation. */
 const HIDE_UNDO_MS = 4800;
 
-/** @type {ReturnType<typeof renderShell> | null} */
 let shell = null;
-/** @type {object} */
 let state = {
   route: null,
   settings: null,
@@ -40,10 +40,7 @@ let state = {
   page: 0,
 };
 
-/**
- * Pending hides: id → { timer, item, title, startedAt }
- * @type {Map<number, { timer: ReturnType<typeof setTimeout>, item: object, title: string, startedAt: number }>}
- */
+/** @type {Map<number, { timer: ReturnType<typeof setTimeout>, item: object, title: string, startedAt: number }>} */
 const pendingHides = new Map();
 
 export async function init() {
@@ -114,7 +111,11 @@ function navigate(path) {
 async function reload() {
   if (!shell) return;
   cancelAllPendingHides();
-  shell.main.innerHTML = `<div class="shn-loading">Loading…</div>`;
+  shell.main.replaceChildren();
+  const loading = document.createElement("div");
+  loading.className = "shn-loading";
+  loading.textContent = "Loading…";
+  shell.main.appendChild(loading);
   shell.setStatus("");
 
   try {
@@ -124,10 +125,12 @@ async function reload() {
       await loadList(state.route.list);
     }
   } catch (e) {
-    shell.main.innerHTML = `<div class="shn-empty">Failed to load. ${escapeHtml(
-      String(e.message || e)
-    )}</div>`;
-    shell.setStatus(String(e.message || e), "error");
+    shell.main.replaceChildren();
+    const empty = document.createElement("div");
+    empty.className = "shn-empty";
+    empty.textContent = `Failed to load. ${String((e as Error).message || e)}`;
+    shell.main.appendChild(empty);
+    shell.setStatus(String((e as Error).message || e), "error");
   }
 }
 

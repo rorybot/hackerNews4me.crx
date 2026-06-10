@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * England fixtures for the stadium billboard.
  * Kickoffs as ISO UTC. Update as the tournament progresses.

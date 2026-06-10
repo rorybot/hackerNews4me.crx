@@ -1,3 +1,5 @@
+import { init } from "./app";
+
 // Early paint: reduce white flash from stock HN while we boot.
 (function early() {
   try {
@@ -12,13 +14,10 @@
 
 (async function boot() {
   try {
-    const src = chrome.runtime.getURL("app.js");
-    const { init } = await import(src);
-    // Wait for body so we can mount
     if (document.body) {
       await init();
     } else {
-      await new Promise((resolve) => {
+      await new Promise<void>((resolve) => {
         const done = () => {
           document.removeEventListener("DOMContentLoaded", done);
           resolve();

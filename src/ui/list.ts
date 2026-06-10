@@ -1,5 +1,6 @@
-import { domainOf, timeAgo } from "../api.js";
-import { openBackgroundTab } from "../actions.js";
+// @ts-nocheck
+import { domainOf, timeAgo } from "../api";
+import { openBackgroundTab } from "../actions";
 
 const COLS = [
   { key: "vote", label: "^", min: 36, max: 56, default: 44 },

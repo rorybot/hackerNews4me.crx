@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="144" viewBox="0 0 320 48" shape-rendering="crispEdges">
+  <!-- Wide LED + thin pitch; NOR fan left, ENG fan right -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1c30"/>
+      <stop offset="100%" stop-color="#1a3a5c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="320" height="48" fill="url(#sky)"/>
+
+  <!-- Roof line -->
+  <rect x="0" y="0" width="320" height="2" fill="#0a1018"/>
+  <rect x="0" y="2" width="320" height="1" fill="#2a3448"/>
+
+  <!-- Floodlights -->
+  <rect x="4" y="3" width="1" height="4" fill="#2a3040"/>
+  <rect x="2" y="2" width="5" height="2" fill="#ffe8a0"/>
+  <rect x="315" y="3" width="1" height="4" fill="#2a3040"/>
+  <rect x="313" y="2" width="5" height="2" fill="#ffe8a0"/>
+
+  <!-- ========== LEFT STANDS (narrow): Norway flag + Norwegian ========== -->
+  <!-- Stand seating wash -->
+  <rect x="0" y="6" width="42" height="32" fill="#121820"/>
+  <rect x="0" y="6" width="42" height="1" fill="#2a3448"/>
+
+  <!-- Norway flag (red + blue cross with white fimbriation) -->
+  <rect x="3" y="7" width="18" height="12" fill="#ba0c2f"/>
+  <!-- white cross -->
+  <rect x="9" y="7" width="4" height="12" fill="#ffffff"/>
+  <rect x="3" y="11" width="18" height="4" fill="#ffffff"/>
+  <!-- blue cross -->
+  <rect x="10" y="7" width="2" height="12" fill="#00205b"/>
+  <rect x="3" y="12" width="18" height="2" fill="#00205b"/>
+
+  <!-- NOR label under flag -->
+  <rect x="3" y="20" width="18" height="3" fill="#0a1018"/>
+  <rect x="5" y="21" width="2" height="1" fill="#e8f0ff"/>
+  <rect x="8" y="21" width="2" height="1" fill="#e8f0ff"/>
+  <rect x="11" y="21" width="2" height="1" fill="#e8f0ff"/>
+
+  <!-- Norwegian fan (blonde, red jumper, arms up) -->
+  <!-- head -->
+  <rect x="26" y="18" width="6" height="5" fill="#f0c8a0"/>
+  <rect x="26" y="17" width="6" height="2" fill="#e8d080"/> <!-- blonde hair -->
+  <rect x="27" y="19" width="1" height="1" fill="#1a1010"/> <!-- eye -->
+  <rect x="30" y="19" width="1" height="1" fill="#1a1010"/>
+  <!-- body red jumper -->
+  <rect x="24" y="23" width="10" height="8" fill="#ba0c2f"/>
+  <rect x="26" y="25" width="6" height="2" fill="#00205b"/> <!-- blue stripe -->
+  <!-- arms up celebrating -->
+  <rect x="21" y="20" width="3" height="2" fill="#f0c8a0"/>
+  <rect x="20" y="18" width="2" height="3" fill="#ba0c2f"/>
+  <rect x="34" y="20" width="3" height="2" fill="#f0c8a0"/>
+  <rect x="36" y="18" width="2" height="3" fill="#ba0c2f"/>
+  <!-- legs -->
+  <rect x="26" y="31" width="3" height="5" fill="#1a2840"/>
+  <rect x="30" y="31" width="3" height="5" fill="#1a2840"/>
+  <!-- scarf end -->
+  <rect x="23" y="24" width="2" height="5" fill="#ffffff"/>
+  <rect x="23" y="26" width="2" height="1" fill="#ba0c2f"/>
+
+  <!-- ========== RIGHT STANDS: England flag + fat flag-painted bloke ========== -->
+  <rect x="278" y="6" width="42" height="32" fill="#121820"/>
+  <rect x="278" y="6" width="42" height="1" fill="#2a3448"/>
+
+  <!-- England flag -->
+  <rect x="299" y="7" width="18" height="12" fill="#f4f4f4"/>
+  <rect x="306" y="7" width="4" height="12" fill="#c8102e"/>
+  <rect x="299" y="11" width="18" height="4" fill="#c8102e"/>
+
+  <!-- ENG label -->
+  <rect x="299" y="20" width="18" height="3" fill="#0a1018"/>
+  <rect x="301" y="21" width="2" height="1" fill="#e8f0ff"/>
+  <rect x="304" y="21" width="2" height="1" fill="#e8f0ff"/>
+  <rect x="307" y="21" width="2" height="1" fill="#e8f0ff"/>
+
+  <!-- Fat England bloke (shirtless, St George painted on belly) -->
+  <!-- head -->
+  <rect x="284" y="16" width="7" height="5" fill="#e8b898"/>
+  <rect x="284" y="15" width="7" height="2" fill="#3a2818"/> <!-- dark hair -->
+  <rect x="285" y="17" width="1" height="1" fill="#1a1010"/>
+  <rect x="289" y="17" width="1" height="1" fill="#1a1010"/>
+  <rect x="286" y="19" width="3" height="1" fill="#c07060"/> <!-- mouth cheer -->
+  <!-- wide torso -->
+  <rect x="281" y="21" width="13" height="10" fill="#f0c8a8"/>
+  <!-- St George cross painted on him -->
+  <rect x="286" y="21" width="3" height="10" fill="#c8102e"/>
+  <rect x="281" y="24" width="13" height="3" fill="#c8102e"/>
+  <!-- white paint underpaint peeks -->
+  <rect x="282" y="22" width="2" height="1" fill="#f8f0e8"/>
+  <rect x="291" y="22" width="2" height="1" fill="#f8f0e8"/>
+  <!-- chunky arms -->
+  <rect x="278" y="22" width="3" height="7" fill="#e8b898"/>
+  <rect x="294" y="22" width="3" height="7" fill="#e8b898"/>
+  <!-- beer belly overhang -->
+  <rect x="283" y="30" width="9" height="2" fill="#e0b090"/>
+  <!-- shorts -->
+  <rect x="283" y="32" width="4" height="4" fill="#1a2840"/>
+  <rect x="288" y="32" width="4" height="4" fill="#1a2840"/>
+  <!-- little England scarf in hand -->
+  <rect x="276" y="24" width="2" height="4" fill="#c8102e"/>
+  <rect x="276" y="25" width="2" height="1" fill="#f4f4f4"/>
+
+  <!-- ========== WIDE LED CHASSIS (main event) ========== -->
+  <!-- Boards strip behind / frame: x=42 → 278, y=5 → 38 (to pitch) -->
+  <rect x="42" y="5" width="236" height="33" fill="#0a1018"/>
+  <rect x="42" y="5" width="236" height="1" fill="#4a5568"/>
+  <rect x="42" y="37" width="236" height="1" fill="#4a5568"/>
+
+  <!-- Metal chassis -->
+  <rect x="44" y="6" width="232" height="31" fill="#1a2030"/>
+  <rect x="46" y="7" width="228" height="29" fill="#0e141c"/>
+  <!-- Bezel -->
+  <rect x="48" y="8" width="224" height="27" fill="#05080e"/>
+  <!-- LED well (HTML overlay): x=50–270 (220), y=9–34 (25) -->
+  <rect x="50" y="9" width="220" height="25" fill="#030a10"/>
+  <rect x="50" y="9" width="220" height="1" fill="#1a3848"/>
+  <rect x="50" y="33" width="220" height="1" fill="#0a2030"/>
+  <!-- Bolts -->
+  <rect x="45" y="7" width="2" height="2" fill="#6a7588"/>
+  <rect x="273" y="7" width="2" height="2" fill="#6a7588"/>
+  <rect x="45" y="34" width="2" height="2" fill="#6a7588"/>
+  <rect x="273" y="34" width="2" height="2" fill="#6a7588"/>
+
+  <!-- Support feet into pitch line -->
+  <rect x="70" y="37" width="4" height="2" fill="#2a3040"/>
+  <rect x="246" y="37" width="4" height="2" fill="#2a3040"/>
+
+  <!-- ========== THIN PITCH ========== -->
+  <rect x="0" y="38" width="320" height="10" fill="#2a6238"/>
+  <rect x="0" y="38" width="320" height="1" fill="#3d8a4a"/>
+  <!-- chalk -->
+  <rect x="50" y="42" width="10" height="1" fill="#c8e0c0" opacity="0.5"/>
+  <rect x="80" y="42" width="10" height="1" fill="#c8e0c0" opacity="0.5"/>
+  <rect x="110" y="42" width="10" height="1" fill="#c8e0c0" opacity="0.5"/>
+  <rect x="200" y="42" width="10" height="1" fill="#c8e0c0" opacity="0.5"/>
+  <rect x="230" y="42" width="10" height="1" fill="#c8e0c0" opacity="0.5"/>
+  <rect x="260" y="42" width="10" height="1" fill="#c8e0c0" opacity="0.5"/>
+
+  <!-- Mini goal -->
+  <rect x="275" y="39" width="1" height="7" fill="#f4f4f4"/>
+  <rect x="292" y="39" width="1" height="7" fill="#f4f4f4"/>
+  <rect x="275" y="39" width="18" height="1" fill="#f4f4f4"/>
+  <rect x="278" y="41" width="1" height="1" fill="#a0c0d8"/>
+  <rect x="282" y="41" width="1" height="1" fill="#a0c0d8"/>
+  <rect x="286" y="41" width="1" height="1" fill="#a0c0d8"/>
+  <rect x="290" y="41" width="1" height="1" fill="#a0c0d8"/>
+
+  <!-- Mini ball -->
+  <g transform="translate(155,40)">
+    <rect x="2" y="0" width="4" height="1" fill="#f4f4f4"/>
+    <rect x="1" y="1" width="6" height="4" fill="#f4f4f4"/>
+    <rect x="2" y="5" width="4" height="1" fill="#f4f4f4"/>
+    <rect x="3" y="1" width="2" height="2" fill="#1a1a1a"/>
+    <rect x="2" y="3" width="1" height="1" fill="#1a1a1a"/>
+    <rect x="5" y="3" width="1" height="1" fill="#1a1a1a"/>
+  </g>
+</svg>

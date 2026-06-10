@@ -1,4 +1,5 @@
-import { createBanner } from "./banner.js";
+// @ts-nocheck
+import { createBanner } from "./banner";
 
 const NAV = [
   { href: "/", label: "Top", list: "top" },

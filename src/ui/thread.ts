@@ -1,5 +1,7 @@
-import { timeAgo, domainOf } from "../api.js";
-import { openBackgroundTab } from "../actions.js";
+// @ts-nocheck
+import { timeAgo, domainOf } from "../api";
+import { openBackgroundTab } from "../actions";
+import { setSanitizedHtml } from "../sanitize";
 
 /**
  * Flatten tree to a navigable list of comment nodes with depth.
@@ -100,7 +102,7 @@ export function renderThread(container, opts) {
   if (story.text) {
     const body = document.createElement("div");
     body.className = "shn-text";
-    body.innerHTML = story.text; // HN API returns sanitized HTML
+    setSanitizedHtml(body, story.text);
     inner.appendChild(body);
   }
 
@@ -166,7 +168,7 @@ export function renderThread(container, opts) {
     if (item._collapsed) {
       text.hidden = true;
     } else {
-      text.innerHTML = item.text || "<i>deleted</i>";
+      if (item.text) { setSanitizedHtml(text, item.text); } else { text.textContent = "deleted"; }
     }
 
     // Single content wrapper so .shn-glass > * sits above ::before frost

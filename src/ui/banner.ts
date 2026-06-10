@@ -1,7 +1,8 @@
+// @ts-nocheck
 import {
   getNextEnglandFixture,
   formatFixtureBillboard,
-} from "../assets/england-fixtures.js";
+} from "../fixtures/england";
 
 /**
  * Pitchside banner + wide LED scoreboard for next England match.

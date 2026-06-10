@@ -1,9 +1,12 @@
 {
   "manifest_version": 3,
   "name": "hackerNews4me.crx",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "hackerNews4me.crx — restyles Hacker News as a retro TUI: table layout, RES-style keys, seasonal banner (England WC).",
-  "permissions": ["storage", "tabs"],
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
   "host_permissions": [
     "https://news.ycombinator.com/*",
     "https://hacker-news.firebaseio.com/*"
@@ -14,31 +17,32 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://news.ycombinator.com/*"],
-      "js": ["content.js"],
-      "css": ["styles.css"],
+      "matches": [
+        "https://news.ycombinator.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
       "run_at": "document_start"
     }
   ],
   "web_accessible_resources": [
     {
       "resources": [
-        "app.js",
-        "api.js",
-        "storage.js",
-        "keyboard.js",
-        "actions.js",
-        "ui/list.js",
-        "ui/thread.js",
-        "ui/shell.js",
-        "ui/banner.js",
         "assets/chill-bg.svg",
-        "assets/hn-eng-banner.svg",
-        "assets/england-fixtures.js"
+        "assets/hn-eng-banner.svg"
       ],
-      "matches": ["https://news.ycombinator.com/*"]
+      "matches": [
+        "https://news.ycombinator.com/*"
+      ]
     }
   ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
