@@ -1,6 +1,6 @@
-# Security notes — hackerNews4me.crx
+# Security notes — hackerNews
 
-Personal Brave/Chromium extension that restyles Hacker News. Written for
+Browser extension that restyles Hacker News as a retro TUI. Written for
 sideload / public source review.
 
 ## Trust boundary

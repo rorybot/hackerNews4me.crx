@@ -1,6 +1,6 @@
-# hackerNews4me.crx
+# hackerNews
 
-Personal **Brave / Chromium** extension that replaces the Hacker News UI with a darker, leathery table layout, RES-style keyboard navigation, and a few decorative extras (chill-hop backdrop, pitchside England WC banner).
+Browser extension that restyles Hacker News as a retro TUI: table layout, RES-style keyboard shortcuts, and a seasonal themed banner (England WC edition — it's coming home).
 
 **Sideload only** — not on the Chrome Web Store. Source is TypeScript; load the built files from **`dist/`**.
 

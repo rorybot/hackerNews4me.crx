@@ -1,8 +1,8 @@
 {
-  "name": "hackernews4me.crx",
+  "name": "hackernews",
   "version": "0.2.0",
   "private": true,
-  "description": "hackerNews4me.crx — personal Brave extension for Hacker News",
+  "description": "Browser extension that restyles Hacker News as a retro TUI: table layout, RES-style keyboard shortcuts, and a seasonal themed banner (England WC edition - it's coming home).",
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
