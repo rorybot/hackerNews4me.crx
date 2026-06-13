@@ -699,7 +699,7 @@ function renderShell(opts = {}) {
       <header class="shn-header">
         <div class="shn-brand">
           <span class="shn-logo" aria-hidden="true">HN</span>
-          <span class="shn-title">hackerNews</span>
+          <span class="shn-title">hackerNews4me.ext</span>
         </div>
         <nav class="shn-nav" role="navigation"></nav>
         <div class="shn-meta">
@@ -1781,7 +1781,7 @@ function clamp(n, min, max) {
       await init();
     }
   } catch (err) {
-    console.error("[hackerNews] failed to start", err);
+    console.error("[hackerNews4me.ext] failed to start", err);
   }
 })();
 //# sourceMappingURL=content.js.map

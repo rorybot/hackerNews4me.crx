@@ -27,6 +27,6 @@ import { init } from "./app";
       await init();
     }
   } catch (err) {
-    console.error("[hackerNews] failed to start", err);
+    console.error("[hackerNews4me.ext] failed to start", err);
   }
 })();

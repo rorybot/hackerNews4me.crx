@@ -37,10 +37,10 @@ cpSync(
 
 const manifest = {
   manifest_version: 3,
-  name: "hackerNews",
+  name: "hackerNews4me.ext",
   version: "0.2.0",
   description:
-    "Restyles Hacker News as a retro TUI: table layout, RES-style keys, seasonal themed banner (England WC).",
+    "hackerNews4me.ext — restyles Hacker News as a retro TUI: table layout, RES-style keys, seasonal banner (England WC).",
   permissions: ["storage", "tabs"],
   host_permissions: [
     "https://news.ycombinator.com/*",
