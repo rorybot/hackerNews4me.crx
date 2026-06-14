@@ -1,8 +1,8 @@
 {
-  "name": "hackernews4me.ext",
+  "name": "hackerNews4me.crx",
   "version": "0.2.0",
   "private": true,
-  "description": "hackerNews4me.ext — Browser extension that restyles Hacker News as a retro TUI: table layout, RES-style keyboard shortcuts, and a seasonal themed banner (England WC edition - it's coming home).",
+  "description": "hackerNews4me.crx — Browser extension that restyles Hacker News as a retro TUI: table layout, RES-style keyboard shortcuts, and a seasonal themed banner (England WC edition - it's coming home).",
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rorybot/hackerNews4me.ext.git"
+    "url": "git+https://github.com/rorybot/hackerNews4me.crx.git"
   },
   "license": "MIT",
   "devDependencies": {

@@ -1,4 +1,4 @@
-# hackerNews4me.ext
+# hackerNews4me.crx
 
 Browser extension that restyles Hacker News as a retro TUI: table layout, RES-style keyboard shortcuts, and a seasonal themed banner (England WC edition — it's coming home).
 

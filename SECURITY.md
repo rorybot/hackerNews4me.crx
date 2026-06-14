@@ -1,4 +1,4 @@
-# Security notes — hackerNews4me.ext
+# Security notes — hackerNews4me.crx
 
 Browser extension that restyles Hacker News as a retro TUI. Written for
 sideload / public source review.
