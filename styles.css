@@ -154,9 +154,9 @@ body.shn-resizing * {
 .shn-billboard {
   position: absolute;
   left: 15.625%;
-  top: 23.5%;
+  top: 20%;
   width: 68.75%;
-  height: 48%;
+  height: 55%;
   display: flex;
   pointer-events: none;
   z-index: 2;
@@ -169,8 +169,8 @@ body.shn-resizing * {
   min-height: 0;
   display: grid;
   grid-template-rows: auto 1fr auto auto;
-  gap: 0.1em;
-  padding: 0.35em 0.55em 0.2em;
+  gap: 0.08em;
+  padding: 0.25em 0.5em 0.15em;
   align-content: stretch;
   background:
     radial-gradient(ellipse at 50% 40%, rgba(20, 60, 50, 0.35), transparent 70%),
@@ -472,7 +472,7 @@ body.shn-resizing * {
 }
 
 .shn-bb-out-main {
-  font-size: clamp(1.25rem, 3.8vw, 2.1rem);
+  font-size: clamp(1.05rem, 3.2vw, 1.7rem);
   font-weight: 900;
   letter-spacing: 0.16em;
   line-height: 1;

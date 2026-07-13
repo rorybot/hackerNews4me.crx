@@ -29,17 +29,16 @@ export const ENGLAND_FIXTURES = [
     stage: "Quarter-final",
     venue: "Miami",
   },
-  // Add the next game here when known (e.g. semi-final), then final, etc.
-  // Example (uncomment / replace with real schedule):
-  // {
-  //   home: "TBD",
-  //   away: "England",
-  //   homeCode: "TBD",
-  //   awayCode: "ENG",
-  //   kickoffUtc: "2026-07-15T19:00:00.000Z",
-  //   stage: "Semi-final",
-  //   venue: "TBD",
-  // },
+  {
+    home: "Argentina",
+    away: "England",
+    homeCode: "ARG",
+    awayCode: "ENG",
+    kickoffUtc: "2026-07-17T19:00:00.000Z",
+    stage: "Semi-final",
+    venue: "Houston",
+  },
+  // Add further games (final etc.) as the tournament progresses.
 ];
 
 /**

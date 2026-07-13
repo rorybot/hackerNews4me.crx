@@ -39,24 +39,29 @@
   <rect x="8" y="21" width="2" height="1" fill="#e8f0ff"/>
   <rect x="11" y="21" width="2" height="1" fill="#e8f0ff"/>
 
-  <!-- Norwegian fan (blonde, red jumper, arms up) -->
+  <!-- Norwegian fan (sad + crying after loss) -->
   <!-- head -->
   <rect x="26" y="18" width="6" height="5" fill="#f0c8a0"/>
   <rect x="26" y="17" width="6" height="2" fill="#e8d080"/> <!-- blonde hair -->
   <rect x="27" y="19" width="1" height="1" fill="#1a1010"/> <!-- eye -->
   <rect x="30" y="19" width="1" height="1" fill="#1a1010"/>
+  <!-- tears -->
+  <rect x="27" y="20" width="1" height="2" fill="#70c0ff"/>
+  <rect x="30" y="20" width="1" height="2" fill="#70c0ff"/>
+  <!-- sad mouth -->
+  <rect x="28" y="21" width="2" height="1" fill="#1a1010"/>
   <!-- body red jumper -->
   <rect x="24" y="23" width="10" height="8" fill="#ba0c2f"/>
   <rect x="26" y="25" width="6" height="2" fill="#00205b"/> <!-- blue stripe -->
-  <!-- arms up celebrating -->
-  <rect x="21" y="20" width="3" height="2" fill="#f0c8a0"/>
-  <rect x="20" y="18" width="2" height="3" fill="#ba0c2f"/>
-  <rect x="34" y="20" width="3" height="2" fill="#f0c8a0"/>
-  <rect x="36" y="18" width="2" height="3" fill="#ba0c2f"/>
+  <!-- arms down sad -->
+  <rect x="22" y="24" width="2" height="5" fill="#f0c8a0"/>
+  <rect x="21" y="26" width="2" height="2" fill="#ba0c2f"/>
+  <rect x="34" y="24" width="2" height="5" fill="#f0c8a0"/>
+  <rect x="35" y="26" width="2" height="2" fill="#ba0c2f"/>
   <!-- legs -->
   <rect x="26" y="31" width="3" height="5" fill="#1a2840"/>
   <rect x="30" y="31" width="3" height="5" fill="#1a2840"/>
-  <!-- scarf end -->
+  <!-- scarf end hanging -->
   <rect x="23" y="24" width="2" height="5" fill="#ffffff"/>
   <rect x="23" y="26" width="2" height="1" fill="#ba0c2f"/>
 
@@ -75,13 +80,13 @@
   <rect x="304" y="21" width="2" height="1" fill="#e8f0ff"/>
   <rect x="307" y="21" width="2" height="1" fill="#e8f0ff"/>
 
-  <!-- Fat England bloke (shirtless, St George painted on belly) -->
+  <!-- Fat England bloke (victorious, drinking from viking horn) -->
   <!-- head -->
   <rect x="284" y="16" width="7" height="5" fill="#e8b898"/>
   <rect x="284" y="15" width="7" height="2" fill="#3a2818"/> <!-- dark hair -->
   <rect x="285" y="17" width="1" height="1" fill="#1a1010"/>
   <rect x="289" y="17" width="1" height="1" fill="#1a1010"/>
-  <rect x="286" y="19" width="3" height="1" fill="#c07060"/> <!-- mouth cheer -->
+  <rect x="286" y="19" width="2" height="1" fill="#3a2018"/> <!-- drinking expression -->
   <!-- wide torso -->
   <rect x="281" y="21" width="13" height="10" fill="#f0c8a8"/>
   <!-- St George cross painted on him -->
@@ -90,17 +95,20 @@
   <!-- white paint underpaint peeks -->
   <rect x="282" y="22" width="2" height="1" fill="#f8f0e8"/>
   <rect x="291" y="22" width="2" height="1" fill="#f8f0e8"/>
-  <!-- chunky arms -->
+  <!-- chunky arms: left down, right raised drinking -->
   <rect x="278" y="22" width="3" height="7" fill="#e8b898"/>
-  <rect x="294" y="22" width="3" height="7" fill="#e8b898"/>
+  <rect x="292" y="15" width="3" height="6" fill="#e8b898"/> <!-- raised upper -->
+  <rect x="290" y="18" width="3" height="3" fill="#e8b898"/> <!-- forearm to mouth -->
+  <!-- viking drinking horn -->
+  <rect x="293" y="15" width="7" height="2" fill="#d8c4a0"/>
+  <rect x="299" y="13" width="2" height="3" fill="#b89c70"/> <!-- tip -->
+  <rect x="293" y="17" width="4" height="2" fill="#c9b080"/>
+  <rect x="292" y="16" width="2" height="1" fill="#8a6640"/> <!-- rim/handle -->
   <!-- beer belly overhang -->
   <rect x="283" y="30" width="9" height="2" fill="#e0b090"/>
   <!-- shorts -->
   <rect x="283" y="32" width="4" height="4" fill="#1a2840"/>
   <rect x="288" y="32" width="4" height="4" fill="#1a2840"/>
-  <!-- little England scarf in hand -->
-  <rect x="276" y="24" width="2" height="4" fill="#c8102e"/>
-  <rect x="276" y="25" width="2" height="1" fill="#f4f4f4"/>
 
   <!-- ========== WIDE LED CHASSIS (main event) ========== -->
   <!-- Boards strip behind / frame: x=42 → 278, y=5 → 38 (to pitch) -->
