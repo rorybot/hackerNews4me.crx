@@ -454,6 +454,53 @@ body.shn-resizing * {
   }
 }
 
+/* ── Eliminated / commiseration billboard state ── */
+.shn-billboard-screen.shn-bb-eliminated {
+  grid-template-rows: auto 1fr auto auto;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.shn-bb-out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1em;
+  padding: 0.1em 0;
+}
+
+.shn-bb-out-main {
+  font-size: clamp(1.25rem, 3.8vw, 2.1rem);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  color: #ff9aa8;
+  text-shadow:
+    0 0 14px rgba(255, 80, 110, 0.55),
+    0 0 2px #000;
+  text-transform: uppercase;
+}
+
+.shn-bb-out-sub {
+  font-size: clamp(0.48rem, 1.15vw, 0.66rem);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #8aa8b8;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px rgba(120, 160, 180, 0.4);
+}
+
+/* Slightly muted footer when eliminated */
+.shn-billboard-screen.shn-bb-eliminated .shn-bb-footer {
+  border-top-color: rgba(80, 120, 140, 0.25);
+}
+.shn-billboard-screen.shn-bb-eliminated .shn-bb-when,
+.shn-billboard-screen.shn-bb-eliminated .shn-bb-where {
+  opacity: 0.85;
+}
+
 /* Terminal panels — borders first; fill stays translucent */
 .shn-glass {
   position: relative;

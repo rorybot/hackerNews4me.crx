@@ -1,9 +1,11 @@
 // @ts-nocheck
 /**
  * England fixtures for the stadium billboard.
- * Kickoffs as ISO UTC. Update as the tournament progresses.
+ * Kickoffs as ISO UTC. Update / prune this list as the tournament progresses.
  *
- * QF Norway v England — Miami, 11 Jul 2026 17:00 EDT = 22:00 BST
+ * Add future games in order. Once a game has passed + a grace period,
+ * getNextEnglandFixture() will skip it. When the list has no future games,
+ * the banner switches to a commiseration state.
  */
 
 /** @typedef {{
@@ -27,6 +29,17 @@ export const ENGLAND_FIXTURES = [
     stage: "Quarter-final",
     venue: "Miami",
   },
+  // Add the next game here when known (e.g. semi-final), then final, etc.
+  // Example (uncomment / replace with real schedule):
+  // {
+  //   home: "TBD",
+  //   away: "England",
+  //   homeCode: "TBD",
+  //   awayCode: "ENG",
+  //   kickoffUtc: "2026-07-15T19:00:00.000Z",
+  //   stage: "Semi-final",
+  //   venue: "TBD",
+  // },
 ];
 
 /**
@@ -91,5 +104,53 @@ export function formatFixtureBillboard(f) {
     stageFull: f.stage.toUpperCase(),
     venue: f.venue.toUpperCase(),
     fullTitle: `${f.home} v ${f.away} · ${f.stage} · ${f.venue}`,
+  };
+}
+
+/** Possible commiseration messages (one is chosen when England are out). */
+const COMMISERATION_MESSAGES = [
+  {
+    title: "THREE LIONS",
+    main: "OUT",
+    sub: "PROUD OF THE BOYS",
+    footer: "THANKS FOR THE RUN • 2026",
+  },
+  {
+    title: "ENGLAND",
+    main: "ELIMINATED",
+    sub: "IT'S BEEN A HELL OF A TOURNAMENT",
+    footer: "WE'LL BE BACK • 2030",
+  },
+  {
+    title: "THREE LIONS",
+    main: "OUT",
+    sub: "THEY GAVE IT EVERYTHING",
+    footer: "RESPECT • SEE YOU NEXT TIME",
+  },
+];
+
+/**
+ * @param {Date} [now]
+ * @returns {{ kind: 'fixture', bb: ReturnType<typeof formatFixtureBillboard> } |
+ *           { kind: 'eliminated', title: string, main: string, sub: string, footer: string }}
+ */
+export function getEnglandDisplayState(now = new Date()) {
+  const fixture = getNextEnglandFixture(now);
+  if (fixture) {
+    return { kind: "fixture", bb: formatFixtureBillboard(fixture) };
+  }
+
+  // Knocked out / no more upcoming fixtures — pick a commiseration message.
+  // Deterministic per day so it doesn't jump around on every reload.
+  const day = now.getUTCDate();
+  const idx = day % COMMISERATION_MESSAGES.length;
+  const msg = COMMISERATION_MESSAGES[idx];
+
+  return {
+    kind: "eliminated",
+    title: msg.title,
+    main: msg.main,
+    sub: msg.sub,
+    footer: msg.footer,
   };
 }
